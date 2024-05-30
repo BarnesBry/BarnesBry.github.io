@@ -1,107 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        <!-- Use a meta tag to designate yourself as the author of the page -->
-        
-        
-        <!-- Give your page a title. -->
-        
-        
-        <!-- Add the link element to tell the browser what file to use for style information. -->
-        
-        
-    </head>
-    <body>
-        <header>
-             
-            
-            <!-- Add a level 1 heading to display three words. Use a span element to highlight the second word. Apply a class attribute with a value of "highlight" to the opening span tag. -->
-            
-            
-        </header>   
-        
-        
-        <!-- Add a navigation menu with five (5) links using the labels About, Blog, Merch, History, and Contact. Use the "#" symbol for your href values. -->
-        
-        
-        <main>
-            
-            
-            <!-- Add a level 2 heading -->
-            
-            
-            <!-- Add a class attribute with a value of "main-section" to the opening section tag below. -->
-            
-            
-            <section>
-                <article>
-                    
-                    
-                    <!-- Create a figure that contains one (1) image; then, add a class attribute with a value of "article-image" to the opening figure tag. -->
-                    
-                    
-                    <!-- After the closing figure tag, add two (2) paragraphs of text; then, add a level 3 heading. -->
-                                        
-                    
-                    <!-- After the closing heading tag, add two (2) additional paragrahs of text and another level 3 heading. -->
-                                        
-                    
-                    <!-- After the closing heading tag, add three (3) paragraphs of text. -->
-                    
-                    
-                    <!-- Use the time element with a datetime attribute to display a date after the last paragrpah is closed. -->
-                    
-                    
-                    <!-- Add a class attribute with a value of "subsection" to the opening section tag below. -->
-                    
-                    
-                    <section>
-                        
-                        
-                        <!-- Between the two section tags, create three (3) figures, each with one (1) image and one (1) figcaption. -->
-                        
-                    </section>
-                    
-                    
-                    <!-- Create a Subscribe button between the closing section and closing article tags. -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bryce Barnes">
+    <title>CTU Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tofu <span class="highlight">CHARCOAL</span> Unicorns</h1>
+    </header>
 
-                
-                </article>
-                <aside>
-                    
-                    
-                    <!-- Add a level 3 heading, followed by an image and a paragraph. --> 
-                    
-                    
-                    <!-- Add another level 3 heading, followed by an image and a paragraph. -->
-                    
-                    
-                    <!-- You guesed it, add an additional level three heading, followed by an image and a paragraph -->
-                    
-                    
-                    <!-- Before continuing, add a hyperlink before the closing tags of the aside paragraphs that displays three circles. Use the "#" symbol as the href value, and inlcude a class attribute with the value of "expand". Note: The code to use for a cirle is:
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Merch</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-                        &#x26AB;  
-
-                    -->
-                    
-                    
-                </aside>
-            </section>
-        </main>
-        <footer>
-            
-            
-            <!-- Add a paragraph with the copyright and a link to an email address. --->
-            
-            
-            <!-- Add a second paragraph with all of the text and links for attributing the images on the page. Make sure to use the "ideal" attribution from Creative Commons. -->
-            
-            
-        </footer>
-    </body>
+    <main>
+        <h2>Chic Narwhal Waistcoat</h2>
+        <section class="main-section">
+            <article>
+                <figure class="article-image">
+                    <img src="images/stag.jpg" alt="Chic Narwhal Waistcoat">
+                </figure>
+                <p>Yr master cleanse single-origin coffee heirloom pour-over hoodie...</p>
+                <p>Tumblr chia viral paleo. Coloring book trust fund glossier af...</p>
+                <h3>Synth post-ironic helf?</h3>
+                <p>Echo park biodiesel tattooed trust fund...</p>
+                <p>Heirloom leggings pork belly biodiesel...</p>
+                <h3>Unicorn Bread</h3>
+                <p>Tofu narwhal kogi charles...</p>
+                <p>Seitan pop-up ramps...</p>
+                <p>Seitan pug hoodie...</p>
+                <time datetime="2020-09-24">24 September, 2020</time>
+                <section class="subsection">
+                    <figure>
+                        <img src="images/eren-30s.jpg" alt="Eren 30s">
+                        <figcaption>Twee, green banh mi la croix.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/industrial-city-2.jpg" alt="Industrial City 2">
+                        <figcaption>Sartorial scenester roof party.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/in-nomino.jpg" alt="In Nomino">
+                        <figcaption>Seitan succulents, woke wolf migas.</figcaption>
+                    </figure>
+                </section>
+                <button>SUBSCRIBE</button>
+            </article>
+            <aside>
+                <h3>Freegan tote bag</h3>
+                <img src="images/industrial.jpg" alt="Freegan tote bag">
+                <p>I'm baby retro single-origin coffee vex denim aortic...</p>
+                <h3>Readymade microdosing trust fund</h3>
+                <img src="images/routine.jpg" alt="Microdosing trust fund">
+                <p>You probably haven't heard of them pok bushwick...</p>
+                <h3>Cliche meditation</h3>
+                <img src="images/industrial-city.jpg" alt="Cliche meditation">
+                <p>Lumbersexual cliche poke intelligentsia vegan retro...</p>
+                <a href="#" class="expand">&#x26AB; &#x26AB; &#x26AB;</a>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2020 Sasha Aim. <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+        <p>Image attributions: <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a></p>
+    </footer>
+</body>
 </html>

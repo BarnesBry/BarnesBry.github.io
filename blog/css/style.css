@@ -1,51 +1,169 @@
-/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* 
-        
-        Spacing 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f8f8f8;
+    color: #333;
+}
 
-            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
 
-            - margin, (shorthand and/or specific properties like margin-top, etc.)
+    header h1 {
+        font-size: 2.5em;
+        margin: 0;
+    }
 
-            - letter-spacing, word-spacing, line-height
+        header h1 .highlight {
+            color: #ff6347;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            background: #333;
+            color: white;
+            padding: 0 10px;
+        }
 
-            - width, max-width, min-width
-            - height, max-height, min-height
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #333;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
 
-        Typography 
+    nav ul li {
+        margin: 0 10px;
+    }
 
-            - font-family, font-size, font-style, font-weight
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            font-size: 1.2em;
+        }
 
-            - text-decoration, text-align
+            nav ul li a:hover {
+                background: #ff6347;
+            }
 
-            - color
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border: 1px solid #ddd;
+}
 
-            - text-shadow, text-transform
+    main h2 {
+        text-align: center;
+        font-size: 2em;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
 
-        Box, Layout and Border 
+.main-section {
+    display: flex;
+}
 
-            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+.article-image {
+    margin-right: 20px;
+    float: left;
+    width: 40%;
+}
 
-            - box-shadow
+    .article-image img {
+        width: 100%;
+        height: auto;
+    }
 
-            - display, float, align-items, align-content
+article {
+    width: 60%;
+}
 
-            - grid-template-columns, grid-column-gap
+aside {
+    width: 35%;
+    margin-left: 20px;
+}
 
-            - transform
+    aside h3 {
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
 
-        Other
+    aside img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
 
-            - :nth()-child (to target specific child elements)
+    aside p {
+        margin-bottom: 20px;
+    }
 
-            - :focus, :hover, :active (to target link states)
+.expand {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+}
 
-            - @font-face or @import (to import typefaces)
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
 
-        */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
 
+    button:hover {
+        background-color: #ff6347;
+    }
 
-/* ------ START WRITING YOUR CODE BELOW ------ */
+.subsection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
 
+    .subsection figure {
+        margin: 0;
+    }
 
+    .subsection img {
+        width: 100%;
+        height: auto;
+    }
+
+    .subsection figcaption {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 0.9em;
+    }
