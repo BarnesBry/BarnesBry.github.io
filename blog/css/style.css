@@ -10,8 +10,10 @@ body {
     line-height: 1.6;
     background: #f8f8f8;
     color: #333;
+    padding: 20px;
 }
 
+/* Header styling */
 header {
     background-color: #f4f4f4;
     padding: 20px;
@@ -34,14 +36,14 @@ header {
             padding: 0 10px;
         }
 
+/* Navigation styling */
 nav ul {
-    list-style: none;
+    list-style: none; /* Remove bullet points */
     padding: 0;
     background: #333;
-    text-align: center;
+    display: flex; /* Display items in a row */
+    justify-content: center; /* Center items horizontally */
     margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
     nav ul li {
@@ -60,6 +62,7 @@ nav ul {
                 background: #ff6347;
             }
 
+/* Main content styling */
 main {
     padding: 20px;
     max-width: 1200px;
@@ -76,13 +79,14 @@ main {
         margin-bottom: 20px;
     }
 
+/* Main section styling */
 .main-section {
     display: flex;
+    justify-content: space-between;
 }
 
 .article-image {
     margin-right: 20px;
-    float: left;
     width: 40%;
 }
 
@@ -95,6 +99,46 @@ article {
     width: 60%;
 }
 
+    /* Article content styling */
+    article h3 {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    article p {
+        margin-bottom: 20px;
+    }
+
+time {
+    display: block;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Subsection for images */
+.subsection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+    .subsection figure {
+        margin: 0;
+    }
+
+    .subsection img {
+        width: 100%;
+        height: auto;
+    }
+
+    .subsection figcaption {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 0.9em;
+    }
+
+/* Aside section styling */
 aside {
     width: 35%;
     margin-left: 20px;
@@ -121,6 +165,7 @@ aside {
     text-decoration: none;
 }
 
+/* Footer styling */
 footer {
     background: #333;
     color: white;
@@ -130,6 +175,7 @@ footer {
     width: 100%;
 }
 
+/* Button styling */
 button {
     background-color: #333;
     color: white;
@@ -144,26 +190,4 @@ button {
 
     button:hover {
         background-color: #ff6347;
-    }
-
-.subsection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 20px;
-}
-
-    .subsection figure {
-        margin: 0;
-    }
-
-    .subsection img {
-        width: 100%;
-        height: auto;
-    }
-
-    .subsection figcaption {
-        text-align: center;
-        margin-top: 5px;
-        font-size: 0.9em;
     }
